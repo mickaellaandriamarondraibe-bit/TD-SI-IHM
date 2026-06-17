@@ -14,7 +14,7 @@ class CreateUtilisateurs extends Migration
            'nom' => ['type' => 'TEXT','null' => false,],
            'email' => ['type' => 'TEXT','null' => false,],
            'mot_de_passe' => ['type' => 'TEXT','null' => false,],
-           'role' => ['type' => 'TEXT','default' => 'caissier',],
+           'role' => ['type' => 'TEXT','default' => 'client',],
            'created_at' => ['type' => 'DATETIME','null' => true,],
            'updated_at' => ['type' => 'DATETIME','null' => true,],
         ]);

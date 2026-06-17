@@ -11,11 +11,13 @@ class CreateAchats extends Migration
         $this->forge->addField([
             'id' => ['type' => 'INTEGER','auto_increment' => true,],
             'caisse_id' => ['type' => 'INTEGER','null' => false,],
+            'client_id' => ['type' => 'INTEGER','null' => true,],
             'created_at' => ['type' => 'DATETIME','null' => true,],
             'updated_at' => ['type' => 'DATETIME','null' => true,],
         ]);
 
         $this->forge->addKey('id', true);
+
 
         $this->forge->addForeignKey(
             'caisse_id',
