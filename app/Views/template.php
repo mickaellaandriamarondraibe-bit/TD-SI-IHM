@@ -10,15 +10,13 @@
         <nav>
             <a href="">M&I market</a>
             <div>
-                <a href="">Acceuil</a>
-                <?php
-                if(session()->get('loggedIn')): ?>
-                     <span class="nav-user"><?= esc(session()->get('nom')) ?></span>
-                     <a href="">Deconnexion</a>
-                
-                     <?php else : ?>
-                     <a href="">Se connecter</a>
-                <?php endif ; ?>
+            <a href="/">Acceuil</a>
+            <?php if (session()->get('loggedIn')) : ?>
+                <span class="nav-user"><?= esc(session()->get('nom')) ?></span>
+                <a href="/logout">Déconnexion</a>
+            <?php else : ?>
+                <a href="/login">Se connecter</a>
+            <?php endif ?>
             </div>
         </nav>
         <main>
