@@ -45,6 +45,7 @@ class AchatController extends BaseController
     $achatModel = new AchatModel();
     $achatId = $achatModel->insert([
         'caisse_id' => session()->get('caisse_id'),
+        'client_id' => session()->get('client_id')
     ]);
 
     $produitModel = new ProduitModel();

@@ -12,6 +12,6 @@ $routes->get('/logout', 'AuthController::logout');
 
 $routes->group('', ['filter' => 'auth'], static function ($routes) {
     $routes->get('/caisse', 'CaisseController::index');
-    $routes->get('/achat', 'ProduitController::getAllProduits');
+    $routes->post('/achat/form', 'AchatController::form');
+    $routes->post('/achat/cloturer', 'AchatController::cloturerAchat');
 });
-
