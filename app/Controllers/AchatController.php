@@ -12,23 +12,24 @@ class AchatController extends BaseController
         $this->produitModel = new ProduitModel();
     }
     
-     public function form()
-    {
-        
-         $idcaisse = $this->request->getPost('caisse_id');
-        session()->set([
-            'caisse_id' => $idcaisse
-        ]);
-
-        if (!session()->get('caisse_id')) {
-            return redirect()->to('/caisse')->with('error', 'Veuillez choisir une caisse.');
+    public function form()
+{
+    if ($this->request->getMethod() === 'post') {
+        $idcaisse = $this->request->getPost('caisse_id');
+        if (!empty($idcaisse)) {
+            session()->set(['caisse_id' => $idcaisse]);
         }
-
-        return view('achat/acceuil', [
-            'produits'  => $this->produitModel->getAllProduits(),
-            'caisse_id' => session()->get('caisse_id'),
-        ]);
     }
+
+    if (!session()->get('caisse_id')) {
+        return redirect()->to('/caisse')->with('error', 'Veuillez choisir une caisse.');
+    }
+
+    return view('achat/acceuil', [
+        'produits'  => $this->produitModel->getAllProduits(),
+        'caisse_id' => session()->get('caisse_id'),
+    ]);
+}
   
     public function cloturerAchat()
 {
