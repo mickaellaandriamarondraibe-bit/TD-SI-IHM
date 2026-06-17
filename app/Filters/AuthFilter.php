@@ -10,9 +10,10 @@ class AuthFilter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (! session()->get('user_id')) {  // ← 'employe_id' pas 'user_id'
-            return redirect()->to('/')->with('error', 'Veuillez vous connecter.');
+        if (! session()->get('loggedIn')) {
+            return redirect()->to('/login')->with('error', 'Veuillez vous connecter.');
         }
+
         return null;
     }
 
