@@ -133,3 +133,17 @@ in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
  9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 11 SYSTEMPATH/rewrite.php(44): require_once('/home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/public/index.php')
+CRITICAL - 2026-06-17 08:21:55 --> ErrorException: Undefined array key "nom"
+[Method: POST, Route: achat/form]
+in APPPATH/Views/achat/acceuil.php on line 8.
+ 1 APPPATH/Views/achat/acceuil.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/idealy/Documents/S4/Sys Info Mr Rojo/TD-SI-IHM/app/Views/achat/acceuil.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/AchatController.php(27): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AchatController->form()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
