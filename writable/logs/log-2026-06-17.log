@@ -1,0 +1,107 @@
+ERROR - 2026-06-17 09:01:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' in /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#11 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#12 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' in /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#3 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#10 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#11 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
+ERROR - 2026-06-17 09:01:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' in /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
+#4 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
+#5 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
+#6 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+#7 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#8 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#10 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/spark(87): CodeIgniter\Boot::bootSpark()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' in /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
+#3 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
+#4 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
+#5 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+#6 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+#7 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/system/Boot.php(166): CodeIgniter\Boot::runCommand()
+#9 /home/mickaella/Projet/2026/s4/nouveau/INF205_Systeme_Information/Import_Export/Tp4/TD-SI-IHM/spark(87): CodeIgniter\Boot::bootSpark()
+#10 {main}
+CRITICAL - 2026-06-17 09:01:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost'
+[Method: CLI, Route: db:seed/DemoSeeder]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Config.php(111): CodeIgniter\Database\Database->loadForge()
+ 3 SYSTEMPATH/Database/Seeder.php(103): CodeIgniter\Database\Config::forge()
+ 4 SYSTEMPATH/Commands/Database/Seed.php(71): CodeIgniter\Database\Seeder->__construct()
+ 5 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+ 6 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+ 7 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+ 9 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-06-17 09:03:27 --> no such table: produits
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute()
+ 6 APPPATH/Database/Seeds/DemoSeeder.php(13): CodeIgniter\Database\BaseBuilder->insertBatch()
+ 7 SYSTEMPATH/Database/Seeder.php(155): App\Database\Seeds\DemoSeeder->run()
+ 8 SYSTEMPATH/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call()
+ 9 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+10 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-06-17 09:10:43 --> UNIQUE constraint failed: caisses.numero
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute()
+ 6 APPPATH/Database/Seeds/DemoSeeder.php(52): CodeIgniter\Database\BaseBuilder->insertBatch()
+ 7 SYSTEMPATH/Database/Seeder.php(155): App\Database\Seeds\DemoSeeder->run()
+ 8 SYSTEMPATH/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call()
+ 9 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+10 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
