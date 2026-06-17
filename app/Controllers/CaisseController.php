@@ -13,7 +13,16 @@ class CaisseController extends BaseController
         return view('caisse/acceuil', $data);
     }
 
-   
+    public function valider()
+    {
+        $caisseId = $this->request->getPost('caisse_id');
 
-   
+        if (empty($caisseId)) {
+            return redirect()->back()->with('error', 'Veuillez sélectionner une caisse.');
+        }
+
+        session()->set('caisse_id', $caisseId);
+
+        return redirect()->to('/achat')->with('success', 'Caisse sélectionnée.');
+    }
 }

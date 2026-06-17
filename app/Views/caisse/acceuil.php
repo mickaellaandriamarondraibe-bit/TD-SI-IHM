@@ -1,7 +1,7 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
 
-<form action="<?= base_url('/achat/form') ?>" method="post">
+<form action="<?= base_url('/caisse') ?>" method="post">
         <select name="caisse_id" id="caisse_id">
             <option value="">Sélectionnez une caisse</option>
             <?php foreach ($caisses as $caisse): ?>
