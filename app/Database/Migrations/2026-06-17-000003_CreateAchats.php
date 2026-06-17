@@ -11,7 +11,6 @@ class CreateAchats extends Migration
         $this->forge->addField([
             'id' => ['type' => 'INTEGER','auto_increment' => true,],
             'caisse_id' => ['type' => 'INTEGER','null' => false,],
-            'montant_total' => ['type' => 'INTEGER','default' => 0,],
             'created_at' => ['type' => 'DATETIME','null' => true,],
             'updated_at' => ['type' => 'DATETIME','null' => true,],
         ]);
