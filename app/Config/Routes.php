@@ -7,4 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'AuthController::login');
 $routes->get('/caisse', 'CaisseController::index');
+$routes->get('/achat', 'ProduitController::getAllProduits');
 
